@@ -1,1 +1,1 @@
-export const somefunc = (num) => num * 5;
+export const somefunceee = (num) => num * 5;
