@@ -1,1 +1,1 @@
-export const multiply = (num) => num * 3;
+export const multiply = (num) => num * 5;
