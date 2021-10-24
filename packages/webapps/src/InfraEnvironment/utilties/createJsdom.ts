@@ -1,4 +1,4 @@
-const { JSDOM, VirtualConsole } = require('jsdom')
+import { JSDOM, VirtualConsole } from 'jsdom'
 
 const createVirtualConsole = ({ omitJSDOMErrors = true } = {}) => {
   const virtualConsole = new VirtualConsole()
@@ -6,10 +6,10 @@ const createVirtualConsole = ({ omitJSDOMErrors = true } = {}) => {
   return virtualConsole
 }
 
-exports.createJSDOM = () => {
+export const createJSDOM = () => {
   return new JSDOM('<!doctype html><html><body></body></html>', {
     runScripts: 'dangerously',
     url: 'http://localhost',
-    virtualConsole: createVirtualConsole()
+    virtualConsole: createVirtualConsole(),
   })
 }

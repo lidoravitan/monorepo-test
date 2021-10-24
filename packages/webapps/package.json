@@ -1,9 +1,12 @@
 {
-  "name": "@nielsen-media/webapps",
+  "name": "@nielsen-media/maf-",
   "version": "1.4.0",
   "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
   "license": "MIT",
-  "scripts": {
-    "build": "tsc"
-  }
+  "scripts": {}
 }

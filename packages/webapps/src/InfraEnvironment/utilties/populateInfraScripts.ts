@@ -1,7 +1,7 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
-exports.populateInfraScripts = () => {
+export const populateInfraScripts = () => {
   const infraPath = path.resolve(
     __dirname,
     '../../node_modules/webinfra-frontend/build/infra'

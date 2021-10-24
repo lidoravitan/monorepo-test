@@ -1,21 +1,29 @@
-const NodeEnvironment = require('jest-environment-node')
+import NodeEnvironment from 'jest-environment-node'
 
-const { loadExtenalScripts, createJSDOM, populateInfraScripts } = require('./utilties')
-const { mockCanvas, mockInfraConfig, mockLocalStorage } = require('./mocks')
+import {
+  loadExtenalScripts,
+  createJSDOM,
+  populateInfraScripts,
+} from './utilties'
 
-class InfraEnvironment extends NodeEnvironment {
-  constructor (config, context) {
-    super(config, context)
+import { mockCanvas, mockInfraConfig, mockLocalStorage } from './mocks'
+
+export class InfraEnvironment extends NodeEnvironment {
+  testPath: any
+  docblockPragmas: any
+  window: any
+  constructor(config: any, context: any) {
+    super(config)
     this.testPath = context.testPath
     this.docblockPragmas = context.docblockPragmas
     this.window = {
       close: () => {
         throw Error('Please make sure jsdom created properly.')
-      }
+      },
     }
   }
 
-  async setup () {
+  async setup() {
     await super.setup()
 
     const { window } = createJSDOM()
@@ -30,13 +38,13 @@ class InfraEnvironment extends NodeEnvironment {
     this.global.window = window
     this.global.document = window.document
     this.global.global.navigator = {
-      userAgent: 'node.js'
+      userAgent: 'node.js',
     }
 
     this.window = window
   }
 
-  async teardown () {
+  async teardown() {
     await super.teardown()
 
     // JSDOM Util to terminate all running timers (and also remove any event listeners on the window and document).
@@ -50,11 +58,7 @@ class InfraEnvironment extends NodeEnvironment {
     this.window = undefined
   }
 
-  runScript (script) {
-    return super.runScript(script)
+  getVmContext() {
+    return super.getVmContext()
   }
-
-  handleTestEvent (event, state) {}
 }
-
-exports.InfraEnvironment = InfraEnvironment

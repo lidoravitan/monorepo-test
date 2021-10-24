@@ -1,11 +1,11 @@
-exports.mockCanvas = window => {
+export const mockCanvas = (window) => {
   window.HTMLCanvasElement.prototype.getContext = function () {
     return {
       fillRect: function () {},
       clearRect: function () {},
       getImageData: function (x, y, w, h) {
         return {
-          data: new Array(w * h * 4)
+          data: new Array(w * h * 4),
         }
       },
       putImageData: function () {},
@@ -32,7 +32,7 @@ exports.mockCanvas = window => {
       },
       transform: function () {},
       rect: function () {},
-      clip: function () {}
+      clip: function () {},
     }
   }
 

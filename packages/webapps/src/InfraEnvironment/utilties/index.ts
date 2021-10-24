@@ -1,9 +1,3 @@
-const { createJSDOM } = require('./createJsdom')
-const { populateInfraScripts } = require('./populateInfraScripts')
-const { loadExtenalScripts } = require('./loadExtenalScripts')
-
-module.exports = {
-  createJSDOM,
-  populateInfraScripts,
-  loadExtenalScripts
-}
+export * from './createJsdom'
+export * from './loadExtenalScripts'
+export * from './populateInfraScripts'

@@ -1,9 +1,3 @@
-const { mockCanvas } = require('./mockCanvas')
-const { mockInfraConfig } = require('./mockInfraConfig')
-const { mockLocalStorage } = require('./mockLocalStorage')
-
-module.exports = {
-  mockCanvas,
-  mockInfraConfig,
-  mockLocalStorage
-}
+export * from './mockCanvas'
+export * from './mockInfraConfig'
+export * from './mockLocalStorage'
