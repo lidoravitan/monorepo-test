@@ -1,18 +1,7 @@
 module.exports = (api) => {
   api.cache(true)
-
   return {
-    presets: [
-      [
-        '@babel/env',
-        {
-          targets: {
-            node: 'current',
-          },
-        },
-      ],
-      '@babel/preset-typescript',
-    ],
+    presets: ['@babel/preset-typescript'],
     env: {
       build: {
         ignore: [
@@ -26,6 +15,5 @@ module.exports = (api) => {
       },
     },
     ignore: ['node_modules'],
-    sourceMaps: true,
   }
 }
