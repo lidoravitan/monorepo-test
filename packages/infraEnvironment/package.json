@@ -1,0 +1,15 @@
+{
+  "name": "@nielsen-media/maf-infra-environment",
+  "version": "1.5.1",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "yarn build:clean && tsc",
+    "build:clean": "rm -rf ./lib"
+  },
+  "gitHead": "7b1f022b709bf9bdfd5ab2f121f75e58cacb23ae"
+}
