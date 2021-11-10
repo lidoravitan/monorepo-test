@@ -1,6 +1,6 @@
 {
   "name": "@nielsen-media/maf-testkit-jest-env",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "main": "lib/index.js",
   "files": [
     "lib"
