@@ -9,8 +9,9 @@
     "noLib": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true
+    "sourceMap": false
   },
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

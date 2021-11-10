@@ -12,6 +12,7 @@ export class InfraEnvironment extends NodeEnvironment {
   testPath: any
   docblockPragmas: any
   window: any
+
   constructor(config: any, context: any) {
     super(config)
     this.testPath = context.testPath
@@ -37,6 +38,7 @@ export class InfraEnvironment extends NodeEnvironment {
     this.global.Infra = window.Infra
     this.global.window = window
     this.global.document = window.document
+    //@ts-ignore
     this.global.global.navigator = {
       userAgent: 'node.js',
     }
