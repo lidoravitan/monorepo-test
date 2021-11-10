@@ -10,5 +10,5 @@
     "watch": "tsc --watch",
     "build": "rm -rf ./lib && tsc"
   },
-  "gitHead": "7b1f022b709bf9bdfd5ab2f121f75e58cacb23ae"
+  "gitHead": "1c413ddb6a56398b573f3244eb195d20d31361d5"
 }
