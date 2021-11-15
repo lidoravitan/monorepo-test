@@ -1,6 +1,6 @@
 {
   "name": "@nielsen-mdeia/maf-testkit-cypress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "gitHead": "46aa298c9a6de04700edab460abcbcd2240f6207"
