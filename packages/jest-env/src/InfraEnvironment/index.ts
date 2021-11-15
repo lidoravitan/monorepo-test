@@ -19,7 +19,7 @@ export class InfraEnvironment extends NodeEnvironment {
     this.docblockPragmas = context.docblockPragmas
     this.window = {
       close: () => {
-        throw Error('Please make sure jsdom created properly.')
+        throw Error('Please make sure jsdom created properly!.')
       },
     }
   }
