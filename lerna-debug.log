@@ -1,0 +1,110 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/Users/lidoravitan/Desktop/monorepo/node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/lidoravitan/Desktop/monorepo
+3 info versioning independent
+4 verbose session d815f267b3036c1f
+5 verbose user-agent lerna/4.0.0/node@v14.17.0+x64 (darwin)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '4.0.0' }
+7 verbose rootPath /Users/lidoravitan/Desktop/monorepo
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 2
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "@nielsen-media/maf-testkit-jest-env@1.6.0-2-g9fd86b9" => {"lastTagName":"@nielsen-media/maf-testkit-jest-env@1.6.0","lastVersion":"1.6.0","refCount":"2","sha":"9fd86b9","isDirty":false}
+18 info Looking for changed packages since @nielsen-media/maf-testkit-jest-env@1.6.0
+19 silly checking diff packages/cypress
+20 silly found diff in packages/cypress/index.tsx
+20 silly found diff in packages/cypress/package.json
+21 verbose filtered diff [ 'packages/cypress/index.tsx', 'packages/cypress/package.json' ]
+22 silly checking diff packages/jest-env
+23 silly no diff found in @nielsen-media/maf-testkit-jest-env
+24 verbose updated @nielsen-mdeia/maf-testkit-cypress
+25 verbose git-describe undefined => "@nielsen-media/maf-testkit-jest-env@1.6.0-2-g9fd86b9"
+26 silly git-describe parsed => {"lastTagName":"@nielsen-media/maf-testkit-jest-env@1.6.0","lastVersion":"1.6.0","refCount":"2","sha":"9fd86b9","isDirty":false}
+27 info execute Skipping releases
+28 silly lifecycle No script for "preversion" in "root", continuing
+29 silly lifecycle No script for "preversion" in "@nielsen-mdeia/maf-testkit-cypress", continuing
+30 silly lifecycle No script for "version" in "@nielsen-mdeia/maf-testkit-cypress", continuing
+31 silly lifecycle No script for "version" in "root", continuing
+32 silly gitAdd [ 'packages/cypress/package.json' ]
+33 silly gitCommit Publish
+33 silly gitCommit
+33 silly gitCommit  - @nielsen-mdeia/maf-testkit-cypress@1.0.1
+34 verbose git [
+34 verbose git   'commit',
+34 verbose git   '-F',
+34 verbose git   '/private/var/folders/k3/_0x91_2s3dn4z6081zr_s3rw0000gn/T/dd6f0242-8b17-4b57-99c3-d54b4fdc92ca/lerna-commit.txt'
+34 verbose git ]
+35 silly gitTag @nielsen-mdeia/maf-testkit-cypress@1.0.1
+36 verbose git [
+36 verbose git   'tag',
+36 verbose git   '@nielsen-mdeia/maf-testkit-cypress@1.0.1',
+36 verbose git   '-m',
+36 verbose git   '@nielsen-mdeia/maf-testkit-cypress@1.0.1'
+36 verbose git ]
+37 silly lifecycle No script for "postversion" in "@nielsen-mdeia/maf-testkit-cypress", continuing
+38 silly lifecycle No script for "postversion" in "root", continuing
+39 info git Pushing tags...
+40 silly gitPush origin master
+41 info publish Publishing packages to npm...
+42 notice Skipping all user and access validation due to third-party registry
+43 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+44 warn ENOLICENSE Package @nielsen-mdeia/maf-testkit-cypress is missing a license.
+44 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+44 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+45 silly getCurrentSHA
+46 verbose getCurrentSHA c694745afbe5cd624c70c332526b6aac1fcff7e8
+47 silly lifecycle No script for "prepublish" in "root", continuing
+48 silly lifecycle No script for "prepare" in "root", continuing
+49 silly lifecycle No script for "prepublishOnly" in "root", continuing
+50 silly lifecycle No script for "prepack" in "root", continuing
+51 verbose pack-directory packages/cypress
+52 silly lifecycle No script for "prepublish" in "@nielsen-mdeia/maf-testkit-cypress", continuing
+53 silly lifecycle No script for "prepare" in "@nielsen-mdeia/maf-testkit-cypress", continuing
+54 silly lifecycle No script for "prepublishOnly" in "@nielsen-mdeia/maf-testkit-cypress", continuing
+55 silly lifecycle No script for "prepack" in "@nielsen-mdeia/maf-testkit-cypress", continuing
+56 silly lifecycle No script for "postpack" in "@nielsen-mdeia/maf-testkit-cypress", continuing
+57 verbose packed packages/cypress
+58 silly lifecycle No script for "postpack" in "root", continuing
+59 verbose publish @nielsen-mdeia/maf-testkit-cypress
+60 silly FetchError: request to http://localhost:4873/@nielsen-mdeia%2fmaf-testkit-cypress failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+60 silly     at ClientRequest.<anonymous> (/Users/lidoravitan/Desktop/monorepo/node_modules/minipass-fetch/lib/index.js:110:14)
+60 silly     at ClientRequest.emit (events.js:376:20)
+60 silly     at Socket.socketErrorListener (_http_client.js:475:9)
+60 silly     at Socket.emit (events.js:388:22)
+60 silly     at emitErrorNT (internal/streams/destroy.js:106:8)
+60 silly     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+60 silly     at processTicksAndRejections (internal/process/task_queues.js:82:21)
+60 silly  FetchError: request to http://localhost:4873/@nielsen-mdeia%2fmaf-testkit-cypress failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+60 silly     at ClientRequest.<anonymous> (/Users/lidoravitan/Desktop/monorepo/node_modules/minipass-fetch/lib/index.js:110:14)
+60 silly     at ClientRequest.emit (events.js:376:20)
+60 silly     at Socket.socketErrorListener (_http_client.js:475:9)
+60 silly     at Socket.emit (events.js:388:22)
+60 silly     at emitErrorNT (internal/streams/destroy.js:106:8)
+60 silly     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+60 silly     at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+60 silly   code: 'ECONNREFUSED',
+60 silly   errno: 'ECONNREFUSED',
+60 silly   syscall: 'connect',
+60 silly   address: '127.0.0.1',
+60 silly   port: 4873,
+60 silly   type: 'system'
+60 silly }
+61 error ECONNREFUSED request to http://localhost:4873/@nielsen-mdeia%2fmaf-testkit-cypress failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+62 error FetchError: request to http://localhost:4873/@nielsen-mdeia%2fmaf-testkit-cypress failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+62 error     at ClientRequest.<anonymous> (/Users/lidoravitan/Desktop/monorepo/node_modules/minipass-fetch/lib/index.js:110:14)
+62 error     at ClientRequest.emit (events.js:376:20)
+62 error     at Socket.socketErrorListener (_http_client.js:475:9)
+62 error     at Socket.emit (events.js:388:22)
+62 error     at emitErrorNT (internal/streams/destroy.js:106:8)
+62 error     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
