@@ -10,5 +10,9 @@
     "watch": "tsc --watch",
     "build": "rm -rf ./lib && tsc"
   },
+  "peerDependencies": {
+    "jest": ">=27",
+    "webinfra-frontend": ">3"
+  },
   "gitHead": "1c413ddb6a56398b573f3244eb195d20d31361d5"
 }

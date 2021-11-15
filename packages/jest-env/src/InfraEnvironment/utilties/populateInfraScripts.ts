@@ -4,7 +4,7 @@ import path from 'path'
 export const populateInfraScripts = () => {
   const infraPath = path.resolve(
     __dirname,
-    '../../node_modules/webinfra-frontend/build/infra'
+    '../../../../../webinfra-frontend/build/infra'
   )
 
   const vendors = fs.readFileSync(infraPath + '/vendors.js', 'utf-8')
